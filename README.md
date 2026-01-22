@@ -1,6 +1,43 @@
-# Destination Repository for luck
+# luck
 
-This repository will contain translated/modified content.
+A minimal Python module that returns `True` approximately 70% of the time.
 
-Source: https://github.com/JohnAmadeo/luck.git
-Created: Thu Jan 22 00:39:20 UTC 2026
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install luck
+```
+
+For development installation:
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+Import and call the `is_lucky()` function:
+
+```python
+from luck import is_lucky
+
+# Returns True approximately 70% of the time
+if is_lucky():
+    print("You're lucky!")
+else:
+    print("Not so lucky this time.")
+```
+
+## Behavior
+
+The `is_lucky()` function returns `True` with approximately 70% probability and `False` with approximately 30% probability. Each call is independent and uses Python's `random.random()` function to determine the result.
+
+## License
+
+MIT
+
+## Source
+
+Migrated from: https://github.com/JohnAmadeo/luck.git
